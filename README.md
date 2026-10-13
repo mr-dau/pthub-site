@@ -18,7 +18,32 @@ The website is designed to introduce the platform, highlight its key features, a
 
 ## Technology
 
-The website is built using static web technologies and hosted on GitHub Pages.
+The website is built with dependency-free static HTML, CSS, and JavaScript for compatibility with GitHub Pages.
+
+## Local Preview
+
+From the repository root, run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open [http://localhost:8000/](http://localhost:8000/).
+
+## Project Structure
+
+```text
+.
+├── index.html                 # Homepage
+├── privacy/index.html         # Privacy and account/data deletion policy
+├── terms/index.html           # Terms of service and Store terms
+└── assets/
+    ├── css/styles.css         # Shared responsive styles
+    ├── images/logo/logo512.png
+    └── js/main.js             # Accessible mobile navigation
+```
+
+All internal URLs use relative paths. The same source works from localhost, the GitHub Pages project path (`/pthub-site/`), and a future custom domain without changing asset paths.
 
 ## Legal Information
 
